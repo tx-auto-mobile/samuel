@@ -77,7 +77,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestAddLocation.cs" />
+    <Compile Include="SetupFixture1.cs" />
+    <Compile Include="TestChangeSettings.cs" />
     <Compile Include="TestEditLocation.cs" />
     <Compile Include="TestMenuButtonAndMenuOptions.cs" />
     <Compile Include="TestTermsConditions.cs" />

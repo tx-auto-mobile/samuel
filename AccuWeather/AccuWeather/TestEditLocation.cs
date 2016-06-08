@@ -18,7 +18,7 @@ namespace AccuWeather
     [TestFixture]
     class TestEditLocation
     {
-        static string allowChars = "a,e,i,o,u,c,s,d,u,b"; 
+        static string allowChars = "a,e,i,o,u,c,s,d,un,b"; 
         AppiumDriver<IWebElement> driver;
         ReadCsvs readCsv;
         StepsToSetUpDevice stepSetUpDevice;

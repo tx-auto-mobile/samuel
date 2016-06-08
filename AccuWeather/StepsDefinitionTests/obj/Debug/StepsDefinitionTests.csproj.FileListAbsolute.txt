@@ -18,3 +18,23 @@ C:\Users\osmar.garcia\Documents\Visual Studio 2015\Projects\AccuWeather\StepsDef
 C:\Users\osmar.garcia\Documents\Visual Studio 2015\Projects\AccuWeather\StepsDefinitionTests\obj\Debug\StepsDefinitionTests.csprojResolveAssemblyReference.cache
 C:\Users\osmar.garcia\Documents\Visual Studio 2015\Projects\AccuWeather\StepsDefinitionTests\obj\Debug\StepsDefinitionTests.dll
 C:\Users\osmar.garcia\Documents\Visual Studio 2015\Projects\AccuWeather\StepsDefinitionTests\obj\Debug\StepsDefinitionTests.pdb
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\CsvFiles\AppiumConfiguration.csv
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\CsvFiles\Capabilities.csv
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\CsvFiles\SauceLabsConfiguration.csv
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\StepsDefinitionTests.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\StepsDefinitionTests.pdb
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\appium-dotnet-driver.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\Castle.Core.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\Newtonsoft.Json.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\ReadCsvFiles.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\WebDriver.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\WebDriver.Support.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\ReadCsvFiles.pdb
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\appium-dotnet-driver.xml
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\Castle.Core.xml
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\Newtonsoft.Json.xml
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\WebDriver.xml
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\bin\Debug\WebDriver.Support.xml
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\obj\Debug\StepsDefinitionTests.csprojResolveAssemblyReference.cache
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\obj\Debug\StepsDefinitionTests.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\StepsDefinitionTests\obj\Debug\StepsDefinitionTests.pdb

@@ -28,17 +28,96 @@ namespace StepsDefinitionTests
 
         static string tool_bar_id = "com.accuweather.android:id/tool_bar";
         static string menu_button_class = "android.widget.ImageButton";
-
+        static string more_options_class = "android.widget.ImageView";
+        static string settings_xpath = "//android.widget.LinearLayout[@index=4]";
+        static string units_id = "com.accuweather.android:id/unit2";
 
         static string list_location_name_id = "com.accuweather.android:id/location_name";
         static string list_location_whether_icon_id = "com.accuweather.android:id/weather_icon";
         static string list_location_temp_id = "com.accuweather.android:id/current_temp";
+        static string list_settings_id = "android:id/list";
+        
 
         //complete with the index
         static string list_location_path = "//android.view.View[@resource-id='com.accuweather.android:id/tool_bar']//android.widget.ImageButton[@index=0]";
 
+        public bool click_settings_option()
+        {
+            try
+            {
+                driver.FindElementByXPath(settings_xpath).Click();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
 
+        public string get_units_text()
+        {
+            try
+            {
+                return driver.FindElementById(units_id).Text;
+            }
+            catch
+            {
+                return "nothing";
+            }
+        }
 
+        public bool click_units_option()
+        {
+            try
+            {
+                //driver.FindElement(By.Id(menu_options_add_icon)).Click();
+                driver.FindElementById("android:id/list").FindElements(By.ClassName("android.widget.LinearLayout"))[0].Click();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public bool click_metric_option()
+        {
+            try
+            {
+                //driver.FindElement(By.Id(menu_options_add_icon)).Click();
+                driver.FindElementById("android:id/list").FindElements(By.ClassName("android.widget.LinearLayout"))[0].Click();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public bool click_imperial_option()
+        {
+            try
+            {
+                //driver.FindElement(By.Id(menu_options_add_icon)).Click();
+                driver.FindElementById("android:id/list").FindElements(By.ClassName("android.widget.LinearLayout"))[2].Click();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public bool click_hybrid_option()
+        {
+            try
+            {
+                //driver.FindElement(By.Id(menu_options_add_icon)).Click();
+                driver.FindElementById("android:id/list").FindElements(By.ClassName("android.widget.LinearLayout"))[4].Click();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
         public StepsToMenuOptions(AppiumDriver<IWebElement> driver)
         {
             this.driver = driver;
@@ -233,6 +312,19 @@ namespace StepsDefinitionTests
             catch
             {
                 return 0;
+            }
+        }
+        public bool click_more_options()
+        {
+            try
+            {
+                driver.FindElementById(tool_bar_id).FindElement(By.ClassName(more_options_class)).Click();
+
+                return true;
+            }
+            catch
+            {
+                return false;
             }
         }
 

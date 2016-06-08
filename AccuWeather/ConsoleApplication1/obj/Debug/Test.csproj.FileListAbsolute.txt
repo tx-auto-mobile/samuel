@@ -9,6 +9,14 @@ C:\Users\osmar.garcia\Documents\Visual Studio 2015\Projects\AccuWeather\ConsoleA
 C:\Users\osmar.garcia\Documents\Visual Studio 2015\Projects\AccuWeather\ConsoleApplication1\obj\Debug\Test.csprojResolveAssemblyReference.cache
 C:\Users\osmar.garcia\Documents\Visual Studio 2015\Projects\AccuWeather\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 C:\Users\osmar.garcia\Documents\Visual Studio 2015\Projects\AccuWeather\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Sam\Documents\GitHub\samuel\AccuWeather\ConsoleApplication1\bin\Debug\CsvFiles\AppiumConfiguration.csv
+C:\Sam\Documents\GitHub\samuel\AccuWeather\ConsoleApplication1\bin\Debug\CsvFiles\Capabilities.csv
+C:\Sam\Documents\GitHub\samuel\AccuWeather\ConsoleApplication1\bin\Debug\CsvFiles\SauceLabsConfiguration.csv
 C:\Sam\Documents\GitHub\samuel\AccuWeather\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Sam\Documents\GitHub\samuel\AccuWeather\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Sam\Documents\GitHub\samuel\AccuWeather\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Sam\Documents\GitHub\samuel\AccuWeather\ConsoleApplication1\bin\Debug\ReadCsvFiles.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\ConsoleApplication1\bin\Debug\ReadCsvFiles.pdb
+C:\Sam\Documents\GitHub\samuel\AccuWeather\ConsoleApplication1\obj\Debug\Test.csprojResolveAssemblyReference.cache
 C:\Sam\Documents\GitHub\samuel\AccuWeather\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 C:\Sam\Documents\GitHub\samuel\AccuWeather\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

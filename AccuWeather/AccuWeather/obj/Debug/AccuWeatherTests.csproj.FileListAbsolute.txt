@@ -22,3 +22,27 @@ C:\Users\osmar.garcia\Documents\Visual Studio 2015\Projects\AccuWeather\AccuWeat
 C:\Users\osmar.garcia\Documents\Visual Studio 2015\Projects\AccuWeather\AccuWeather\obj\Debug\AccuWeatherTests.csprojResolveAssemblyReference.cache
 C:\Users\osmar.garcia\Documents\Visual Studio 2015\Projects\AccuWeather\AccuWeather\obj\Debug\AccuWeather.dll
 C:\Users\osmar.garcia\Documents\Visual Studio 2015\Projects\AccuWeather\AccuWeather\obj\Debug\AccuWeather.pdb
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\CsvFiles\AppiumConfiguration.csv
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\CsvFiles\Capabilities.csv
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\CsvFiles\SauceLabsConfiguration.csv
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\AccuWeather.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\AccuWeather.pdb
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\appium-dotnet-driver.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\Castle.Core.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\Newtonsoft.Json.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\nunit.framework.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\ReadCsvFiles.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\StepsDefinitionTests.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\WebDriver.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\WebDriver.Support.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\ReadCsvFiles.pdb
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\StepsDefinitionTests.pdb
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\appium-dotnet-driver.xml
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\Castle.Core.xml
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\Newtonsoft.Json.xml
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\nunit.framework.xml
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\WebDriver.xml
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\bin\Debug\WebDriver.Support.xml
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\obj\Debug\AccuWeatherTests.csprojResolveAssemblyReference.cache
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\obj\Debug\AccuWeather.dll
+C:\Sam\Documents\GitHub\samuel\AccuWeather\AccuWeather\obj\Debug\AccuWeather.pdb
