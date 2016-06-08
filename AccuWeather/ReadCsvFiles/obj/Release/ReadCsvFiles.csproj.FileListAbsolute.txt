@@ -1,0 +1,4 @@
+c:\users\osmar.garcia\documents\visual studio 2015\Projects\AccuWeather\ReadCsvFiles\bin\Release\ReadCsvFiles.dll
+c:\users\osmar.garcia\documents\visual studio 2015\Projects\AccuWeather\ReadCsvFiles\bin\Release\ReadCsvFiles.pdb
+c:\users\osmar.garcia\documents\visual studio 2015\Projects\AccuWeather\ReadCsvFiles\obj\Release\ReadCsvFiles.dll
+c:\users\osmar.garcia\documents\visual studio 2015\Projects\AccuWeather\ReadCsvFiles\obj\Release\ReadCsvFiles.pdb
