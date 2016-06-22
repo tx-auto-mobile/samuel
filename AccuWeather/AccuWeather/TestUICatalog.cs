@@ -16,7 +16,7 @@ using System.Linq;
 namespace AccuWeather
 {
     [TestFixture]
-    class TestChangeSettings
+    class TestUICatalog
     {
         AppiumDriver<IWebElement> driver;
         StepsToSetUpDevice stepSetUpDevice;
@@ -35,7 +35,7 @@ namespace AccuWeather
 
             runtimes++;
             stepSetUpDevice = new StepsToSetUpDevice();
-            driver = stepSetUpDevice.run_driver_with_install(testCaseName, appActivityMainScreen);
+            driver = stepSetUpDevice.run_driver_Browser_on_mac_agent(testCaseName, appActivityMainScreen);
             stepTermConditions = new StepsToTermsAndConditions(driver);
             //stepTermConditions.accept_termns_and_conditions();
             stepMenuOptions = new StepsToMenuOptions(driver);
@@ -67,77 +67,13 @@ namespace AccuWeather
         }
 
         [Test]
-        public void TC016_chagne_to_metrics_system()
+        public void TCIOS01_chagne_to_metrics_system()
         {
-            if (stepMenuOptions.verify_menu_displayed() == true)
-            {
-                Assert.That(stepMenuOptions.touch_outside_element_by_id(), Is.True, "Problems to touch outside of the Menu");//close menu option 
-            }
-            Assert.That(stepMenuOptions.click_more_options(), Is.True, "More options button is not found");
-            Assert.That(stepMenuOptions.click_settings_option(), Is.True, "Settings button is not found");
-            Assert.That(stepMenuOptions.click_units_option(), Is.True, "Units option is not found");
-            Assert.That(stepMenuOptions.click_metric_option(), Is.True, "Metric option is not found");
-            stepMenuOptions.click_back_android_button();
-            stepMenuOptions.click_back_android_button();
-            Assert.AreEqual(" KM/H", stepMenuOptions.get_units_text());
+            Assert.AreEqual(" KM/H", "KM/H");
                         
         }
-        [Test]
-        public void TC017_chagne_to_imperial_system()
-        {
-            if (stepMenuOptions.verify_menu_displayed() == true)
-            {
-                Assert.That(stepMenuOptions.touch_outside_element_by_id(), Is.True, "Problems to touch outside of the Menu");//close menu option 
-            }
-            Assert.That(stepMenuOptions.click_more_options(), Is.True, "More options button is not found");
-            Assert.That(stepMenuOptions.click_settings_option(), Is.True, "Settings button is not found");
-            Assert.That(stepMenuOptions.click_units_option(), Is.True, "Units option is not found");
-            Assert.That(stepMenuOptions.click_imperial_option(), Is.True, "Metric option is not found");
-            stepMenuOptions.click_back_android_button();
-            stepMenuOptions.click_back_android_button();
-            Assert.AreEqual(" MPH", stepMenuOptions.get_units_text());
-
-        }
-        [Test]
-        public void TC018_chagne_to_hybrid_system()
-        {
-            if (stepMenuOptions.verify_menu_displayed() == true)
-            {
-                Assert.That(stepMenuOptions.touch_outside_element_by_id(), Is.True, "Problems to touch outside of the Menu");//close menu option 
-            }
-            Assert.That(stepMenuOptions.click_more_options(), Is.True, "More options button is not found");
-            Assert.That(stepMenuOptions.click_settings_option(), Is.True, "Settings button is not found");
-            Assert.That(stepMenuOptions.click_units_option(), Is.True, "Units option is not found");
-            Assert.That(stepMenuOptions.click_hybrid_option(), Is.True, "Metric option is not found");
-            stepMenuOptions.click_back_android_button();
-            stepMenuOptions.click_back_android_button();
-            Assert.AreEqual(" KM/H", stepMenuOptions.get_units_text());
-
-        }
-        [Test]
-        [TestCase("Santa")]
-        public void TC010_Add_Location_Suggestions_Location_Displayed_Matches_Text_Entered(string location)
-        {
-
-            if (stepMenuOptions.verify_menu_displayed() == false)
-            {
-                Assert.That(stepMenuOptions.click_menu_button_by_class(), Is.True, "Menu Button is not found");
-            }
-
-            
-            Assert.That(stepMenuOptions.click_add_location_button_by_id(), Is.True, "Add Location button is not found");
-            Assert.That(stepAddLocation.fill_up_serch_text_field(location), Is.True, "The text field cannot be found");
-
-            Assert.That(stepAddLocation.verify_element_displayed_add_location_screen_by_id("searchlist"),Is.True,"Suggestion search list is not displayed");
-            Assert.That(stepAddLocation.get_amount_location_suggestions(), Is.GreaterThan(0), "There is no suggestions displayed in Suggestion list");
-
-            for(int i=0;i< stepAddLocation.get_amount_location_suggestions(); i++)
-            {
-                Assert.That(stepAddLocation.get_string_location_selected_by_index(i).Substring(0,location.Length).ToLower(), Is.EqualTo(location.ToLower()), "Suggestion does not match with the string entered in the text field");
-
-            }
-
-        }
+        
+        
         
 
         [OneTimeTearDown]

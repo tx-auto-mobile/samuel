@@ -8,6 +8,7 @@ using OpenQA.Selenium.Support.UI;
 using ReadCsvFiles;
 using System.Collections.Generic;
 using OpenQA.Selenium.Appium.Android;
+using OpenQA.Selenium.Appium.iOS;
 using OpenQA.Selenium.Appium;
 
 namespace StepsDefinitionTests
@@ -95,20 +96,21 @@ namespace StepsDefinitionTests
 
             cap.SetCapability("appPackage", "com.accuweather.android");
             cap.SetCapability("appActivity", appActivity);
-            driver = new AndroidDriver<IWebElement>(new Uri("http://" + server + ":" + port + "/wd/hub"), cap, TimeSpan.FromSeconds(600));
+            driver = new AndroidDriver<IWebElement>(new Uri("http://" + server + ":" + port + "/wd/hub"), cap, TimeSpan.FromSeconds(60000));
 
 
-            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(15));
+            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(60));
+            driver.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromMinutes(10));
 
-           
+
             return driver;
         }
-        public AppiumDriver<IWebElement> run_driver_without_install(string testName, string appActivity)
+        public AppiumDriver<IWebElement> run_driver_Browser_on_mac_agent(string testName, string appActivity)
         {
             AppiumDriver<IWebElement> driver;
             DesiredCapabilities cap = new DesiredCapabilities();
-            //cap.SetCapability("noReset", "false");
-            //cap.SetCapability("fullReset", "true");
+            cap.SetCapability("noReset", "false");
+            cap.SetCapability("fullReset", "true");
             cap.SetCapability("name", testName);
 
             if (real.Equals("yes"))
@@ -116,7 +118,8 @@ namespace StepsDefinitionTests
                 cap.SetCapability("platformName", plataform);
                 cap.SetCapability("deviceName", deviceName);
                 cap.SetCapability("platformVersion", plataformVersion);
-                //cap.SetCapability("app", app);
+                cap.SetCapability("app", app);
+                //cap.SetCapability("browser", "safari");
             }
             else if (real.Equals("no"))
             {
@@ -126,23 +129,72 @@ namespace StepsDefinitionTests
                     cap.SetCapability("deviceName", deviceName);
                     cap.SetCapability("udid", udid);
                     cap.SetCapability("platformVersion", plataformVersion);
-                    //cap.SetCapability("app", app);
+                    cap.SetCapability("app", app);
+                    //cap.SetCapability("browser", "safari");
                 }
                 else
                 {
                     cap.SetCapability("deviceName", deviceName);
                     cap.SetCapability("platformVersion", plataformVersion);
                     cap.SetCapability("platformName", plataform);
-                    //cap.SetCapability("app", app);
+                    cap.SetCapability("app", app);
+                    cap.SetCapability("browser", "safari");
                     cap.SetCapability("username", username);
                     cap.SetCapability("accessKey", key);
                     cap.SetCapability("appiumVersion", appiumVersion);
                 }
             }
 
-            cap.SetCapability("appPackage", "com.accuweather.android");
-            cap.SetCapability("appActivity", appActivity);
-            driver = new AndroidDriver<IWebElement>(new Uri("http://" + server + ":" + port + "/wd/hub"), cap, TimeSpan.FromSeconds(600));
+            //cap.SetCapability("appPackage", "com.accuweather.android");
+            //cap.SetCapability("appActivity", appActivity);
+            driver = new IOSDriver<IWebElement>(new Uri("http://" + server + ":" + port + "/wd/hub"), cap, TimeSpan.FromSeconds(600));
+
+
+            driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(15));
+
+
+            return driver;
+        }
+        public AppiumDriver<IWebElement> run_driver_without_install(string testName, string appActivity)
+        {
+            AppiumDriver<IWebElement> driver;
+            DesiredCapabilities cap2 = new DesiredCapabilities();
+            cap2.SetCapability("noReset", "true");
+            cap2.SetCapability("fullReset", "false");
+            cap2.SetCapability("name", testName);
+
+            if (real.Equals("yes"))
+            {
+                cap2.SetCapability("platformName", plataform);
+                cap2.SetCapability("deviceName", deviceName);
+                cap2.SetCapability("platformVersion", plataformVersion);
+                //cap2.SetCapability("app", app);
+            }
+            else if (real.Equals("no"))
+            {
+                if (sauceLabs.Equals("no"))
+                {
+                    cap2.SetCapability("platformName", plataform);
+                    cap2.SetCapability("deviceName", deviceName);
+                    cap2.SetCapability("udid", udid);
+                    cap2.SetCapability("platformVersion", plataformVersion);
+                    //cap2.SetCapability("app", app);
+                }
+                else
+                {
+                    cap2.SetCapability("deviceName", deviceName);
+                    cap2.SetCapability("platformVersion", plataformVersion);
+                    cap2.SetCapability("platformName", plataform);
+                    //cap2.SetCapability("app", app);
+                    cap2.SetCapability("username", username);
+                    cap2.SetCapability("accessKey", key);
+                    cap2.SetCapability("appiumVersion", appiumVersion);
+                }
+            }
+
+            cap2.SetCapability("appPackage", "com.accuweather.android");
+            cap2.SetCapability("appActivity", appActivity);
+            driver = new AndroidDriver<IWebElement>(new Uri("http://" + server + ":" + port + "/wd/hub"), cap2, TimeSpan.FromSeconds(600));
 
 
             driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(15));
